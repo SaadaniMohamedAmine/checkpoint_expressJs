@@ -1,0 +1,29 @@
+doctype 
+html
+head 
+title=homePage 
+link(rel='stylesheet' href='style.css')
+
+style. 
+  h3 {
+      color : grey ;
+      text-indent:40px
+  }
+  body {
+    background-image: url('homeBack.jpg') 
+  }
+  .lor {
+      width : 300px ;
+      margin : 20px auto ;
+      border : 2px solid #aaa ;
+      padding :20px ;
+      color : #fff ;
+      background : rgba(0,0,0,0.8) ;
+  }
+
+body 
+ include ./navBar.pug 
+ div.home
+     h3.ident the home page
+     p.lor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat aperiam eius explicabo ab, inventore tempora reiciendis expedita qui. Eos accusantium in aspernatur dolore accusamus itaque veritatis magni, eligendi quis eveniet!
+     img(src='./homeBack.jpg' width="150px" height='150px')

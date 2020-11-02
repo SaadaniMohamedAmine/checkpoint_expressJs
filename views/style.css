@@ -1,0 +1,11 @@
+.nav-item {
+    width:100% ;
+    border:3px solid #aaa ;
+    padding:50px;
+}
+.ident {
+    background:#bbb;
+}
+.service-head {
+    color:#f00 ;
+}
