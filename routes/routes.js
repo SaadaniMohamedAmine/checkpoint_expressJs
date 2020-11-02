@@ -3,9 +3,24 @@ var router=express.Router() ;
 
 
 router.use((req,res,next)=>{
-    console.log(`Request from ${req.url} at ${new Date()}`)
+    console.log(`Request from ${req.url} at ${new Date()}`) ;
      next()
 })
+
+router.use((req,res,next)=>{
+    var date=new Date() ;
+    if(date.getDay()==7 || date.getHours()<9 || date.getHours()>17) 
+        {
+            return next(new Error("We are of working time ,available from monday to friday,from 09h to 17h ."))
+        }
+        else {
+            console.log('We are on working time !!') ;
+            return next() ;
+            
+        }
+    }
+);
+
 
 router
   .route('/home') 
